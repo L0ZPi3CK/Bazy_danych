@@ -1,2 +1,0 @@
-insert into Epoki(Nazwa, Start_e, Stop_e) values ('Antyk',-800,600),('Renesans',1600,1700),('Mloda_Polska',1890,1700),('Oswiecenie',1601,1700),('Romantyzm',1822,1863),('Pozytywizm',1801,1900),('Sredniowiecze',500,1500),('Barok',1600,1800)
-select * from Epoki
