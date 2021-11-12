@@ -1,16 +1,16 @@
 -- ################################################################################################################################################################################
 
--- create database _______		|| Tworzenie bazy ______
+-- create database _______				|| Tworzenie bazy ______
 
--- drop database _______		|| Usuwanie bazy _____ 
+-- drop database _______				|| Usuwanie bazy _____ 
 
--- go							|| Wykonanie poleceñ do tego miejsca
+-- go							|| Wykonanie poleceÅ„ do tego miejsca
 
--- use ______;					|| U¿ycie bazy _______
+-- use ______;						|| UÅ¼ycie bazy _______
 
--- create table _______();		|| Stworzenie tabeli _____ a w nawiasach ( dane o poszczególnych kolumnach i atrybytach)
+-- create table _______();				|| Stworzenie tabeli _____ a w nawiasach ( dane o poszczegÃ³lnych kolumnach i atrybytach)
 
--- drop table ________;			|| Usuwanie tabeli _____
+-- drop table ________;					|| Usuwanie tabeli _____
 
 
 -- ################################################################################################################################################################################
@@ -18,23 +18,23 @@
 																			/* Typy zmiennych: *\
 
 -- int							|| Liczby z zakresu -2,147,483,648 do 2,147,483,647
--- float						|| Liczby zmiennoprzecinkowe (Mo¿na ustalaæ precyzjê poprzez float(x), gdzie za x podajemy dok³adnoœæ po przecinku)
--- varchar(__)					|| Znaki, dla varchar(xx) xx- okreœla maksymaln¹ liczbê znaków jak¹ mo¿emy wprowadziæ
--- money						|| Pieni¹dze
+-- float						|| Liczby zmiennoprzecinkowe (MoÅ¼na ustalaÄ‡ precyzjÄ™ poprzez float(x), gdzie za x podajemy dokÅ‚adnoÅ›Ä‡ po przecinku)
+-- varchar(__)						|| Znaki, dla varchar(xx) xx- okreÅ›la maksymalnÄ… liczbÄ™ znakÃ³w jakÄ… moÅ¼emy wprowadziÄ‡
+-- money						|| PieniÄ…dze
 -- date							|| Data YYYY-MM-DD
 -- datetime						|| Data YYYY-MM-DD HH-MI-SS
 */
 
 -- ################################################################################################################################################################################
 
-																			/* Cechy kolumn które poznaliœmy: *\
+																			/* Cechy kolumn ktÃ³re poznaliÅ›my: *\
 
--- identity(x,y)				|| Autonumerowanie, gdzie x oznacza liczbê od której zaczynamy numerowaæ a y przeskoki w numeracji (np dla (1,2) bêdzie to 1,3,5,7,9....
--- primary key					|| Ustawia kolumne jako klucz g³owny (Primary key automatycznie przypisuje Unique i NOT NULL (Klucz g³ówny musi byæ unikatowy i nie mo¿e byæ pusty)
--- NOT NULL						|| Kolumna nie mo¿e byæ pusta
--- Unique						|| Zapewnia ¿e wszystkie wartoœci w kolumnie s¹ ró¿ne
--- DEFAULT						|| Ustawia wartoœæ domyœln¹ (wiêcej przy u¿yciu poni¿ej)
--- CHECK						|| Ogranicza (wiêcej przy u¿yciu poni¿ej)
+-- identity(x,y)					|| Autonumerowanie, gdzie x oznacza liczbÄ™ od ktÃ³rej zaczynamy numerowaÄ‡ a y przeskoki w numeracji (np dla (1,2) bÄ™dzie to 1,3,5,7,9....
+-- primary key						|| Ustawia kolumne jako klucz gÅ‚owny (Primary key automatycznie przypisuje Unique i NOT NULL (Klucz gÅ‚Ã³wny musi byÄ‡ unikatowy i nie moÅ¼e byÄ‡ pusty)
+-- NOT NULL						|| Kolumna nie moÅ¼e byÄ‡ pusta
+-- Unique						|| Zapewnia Å¼e wszystkie wartoÅ›ci w kolumnie sÄ… rÃ³Å¼ne
+-- DEFAULT						|| Ustawia wartoÅ›Ä‡ domyÅ›lnÄ… (wiÄ™cej przy uÅ¼yciu poniÅ¼ej)
+-- CHECK						|| Ogranicza (wiÄ™cej przy uÅ¼yciu poniÅ¼ej)
 */
 
 -- ################################################################################################################################################################################
@@ -43,31 +43,31 @@
 
 Arytmetyczne:
 -- '+'					|| Suma
--- '-'					|| Ró¿nica
+-- '-'					|| RÃ³Å¼nica
 -- '*'					|| Iloczyn
 -- '/'					|| Iloraz
 -- '%'					|| Modulo
 
 Logiczne:
--- 'AND'				|| "i" ( Do zastosowania przy warunkach, zastosowanie and oznacza ¿e oba MUSZ¥ byæ spe³nione)
--- 'OR'					|| "lub" (Do zastosowania przy warunkach, zastosowanie or oznacza ¿e przynajmniej jeden musi byæ spe³niony)
--- 'NOT'				|| "Nie" (Do zastosowania przy warunkach, zastosowanie not oznacza ¿e warunek nie mo¿e byæ spe³niony)
+-- 'AND'				|| "i" ( Do zastosowania przy warunkach, zastosowanie and oznacza Å¼e oba MUSZÄ„ byÄ‡ speÅ‚nione)
+-- 'OR'					|| "lub" (Do zastosowania przy warunkach, zastosowanie or oznacza Å¼e przynajmniej jeden musi byÄ‡ speÅ‚niony)
+-- 'NOT'				|| "Nie" (Do zastosowania przy warunkach, zastosowanie not oznacza Å¼e warunek nie moÅ¼e byÄ‡ speÅ‚niony)
 
-Porównania:
--- '='					|| Równoœæ
--- '<'					|| Mniejszoœæ
--- '>'					|| Wiêkszoœæ
--- '<='					|| Mniejszy LUB równy
--- '>='					|| Wiêkszy LUB równy
--- '<>'					|| Nie równy
--- '!='					|| Nie równy
+PorÃ³wnania:
+-- '='					|| RÃ³wnoÅ›Ä‡
+-- '<'					|| MniejszoÅ›Ä‡
+-- '>'					|| WiÄ™kszoÅ›Ä‡
+-- '<='					|| Mniejszy LUB rÃ³wny
+-- '>='					|| WiÄ™kszy LUB rÃ³wny
+-- '<>'					|| Nie rÃ³wny
+-- '!='					|| Nie rÃ³wny
 */
 
 -- ################################################################################################################################################################################
--- ############################# Uwaga gdy wprowadzamy Litera³y (Czyli wartoœci do kolumn) to:	###################################################################################
--- ############################# Typy liczbowe maj¹ postaæ liczby:		111						###################################################################################
--- ############################# Ci¹gi znaków musz¹ byæ w apostrofach:	'Siema','Kraków'		###################################################################################
--- ############################# Typy daty musz¹ byæ w apostrofach:		'20-09-2012'			###################################################################################
+-- ############################# Uwaga gdy wprowadzamy LiteraÅ‚y (Czyli wartoÅ›ci do kolumn) to:	###################################################################################
+-- ############################# Typy liczbowe majÄ… postaÄ‡ liczby:		111						###################################################################################
+-- ############################# CiÄ…gi znakÃ³w muszÄ… byÄ‡ w apostrofach:	'Siema','KrakÃ³w'		###################################################################################
+-- ############################# Typy daty muszÄ… byÄ‡ w apostrofach:		'20-09-2012'			###################################################################################
 -- ################################################################################################################################################################################
 
 
@@ -77,7 +77,7 @@ Porównania:
 -- ********************************************************************************************************************************************************************************
 
 
-																			/* Tworzenie po³¹czeñ miêdzy tabelami w trakcie ich tworzenia *\
+																			/* Tworzenie poÅ‚Ä…czeÅ„ miÄ™dzy tabelami w trakcie ich tworzenia *\
 create table xxx
 (
 ...
@@ -85,16 +85,16 @@ yyy		int REFERENCES xxy(yyx),
 ...
 );
 
-xxx			|| Nazwa Tabeli					(Wymyœlamy)
-yyy			|| Nazwa kolumny				(Wymyœlamy)
+xxx			|| Nazwa Tabeli					(WymyÅ›lamy)
+yyy			|| Nazwa kolumny				(WymyÅ›lamy)
 int			|| Cechy kolumny				(Nadajemy)
-xxy			|| Nazwa Drugiej Tabeli			(Bierzemy z bazy, a co z tego wynika Druga Tabela MUSI ju¿ istnieæ)
+xxy			|| Nazwa Drugiej Tabeli			(Bierzemy z bazy, a co z tego wynika Druga Tabela MUSI juÅ¼ istnieÄ‡)
 yyx			|| Nazwa Kolumny Drugiej Tabeli	(Bierzemy z bazy)
 */
 
 -- ################################################################################################################################################################################
 
-																			/* Definiowanie wartoœci domyœlnej podczas tworzenia tabeli *\
+																			/* Definiowanie wartoÅ›ci domyÅ›lnej podczas tworzenia tabeli *\
 create table xxx
 (
 ...
@@ -102,10 +102,10 @@ yyy		int NOT NULL DEFAULT ccc,
 ...
 );
 
-xxx			|| Nazwa Tabeli					(Wymyœlamy)
-yyy			|| Nazwa kolumny				(Wymyœlamy)
-int ...		|| Cechy kolumny				(Nadajemy)
-ccc			|| Wartoœæ domyœlna				(W zale¿noœci od typu kolumny mo¿e byæ to tekst/liczba/data/...)
+xxx			|| Nazwa Tabeli					(WymyÅ›lamy)
+yyy			|| Nazwa kolumny				(WymyÅ›lamy)
+int ...			|| Cechy kolumny				(Nadajemy)
+ccc			|| WartoÅ›Ä‡ domyÅ›lna				(W zaleÅ¼noÅ›ci od typu kolumny moÅ¼e byÄ‡ to tekst/liczba/data/...)
 */
 
 
@@ -117,11 +117,11 @@ ccc			|| Wartoœæ domyœlna				(W zale¿noœci od typu kolumny mo¿e byæ to tekst/lic
 
 -- ################################################################################################################################################################################
 
-																			/* Dodawanie relacji/po³¹czeñ po stworzeniu tabeli *\
+																			/* Dodawanie relacji/poÅ‚Ä…czeÅ„ po stworzeniu tabeli *\
 -- Alter table xxx add constraint xxy foreign key(yyy) references yyx(yxx)
 
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
-xxy			|| Nazwa Ograniczenia			(Wymyœlamy)
+xxy			|| Nazwa Ograniczenia			(WymyÅ›lamy)
 yyy			|| Nazwa kolumny z Tabeli xxx	(Bierzemy z bazy)
 yyx			|| Nazwa Tabeli					(Bierzemy z bazy)
 yxx			|| Nazwa kolumny z Tabeli yyx	(Bierzemy z bazy)
@@ -134,64 +134,64 @@ yxx			|| Nazwa kolumny z Tabeli yyx	(Bierzemy z bazy)
 
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
 yyy			|| Nazwa kolumny z Tabeli xxx	(Bierzemy z bazy)
-zzzyyyxxx	|| Nowe cechy kolumny np. int NOT NULL
+zzzyyyxxx		|| Nowe cechy kolumny np. int NOT NULL
 */
 
 -- ################################################################################################################################################################################
 
-																			/* Nadanie kolumnie cechy klucza g³ównego: *\
+																			/* Nadanie kolumnie cechy klucza gÅ‚Ã³wnego: *\
 -- ALTER TABLE xxx ADD CONSTRAINT xxy primary key (yyy);
-																!!! Wa¿ne - Kolumna której chcemy nadaæ cechy klucza g³ównego musi mieæ przypisany atrybut NOT NULL (no i typ oczywiœcie), dzia³a bez unique idk why
+																!!! WaÅ¼ne - Kolumna ktÃ³rej chcemy nadaÄ‡ cechy klucza gÅ‚Ã³wnego musi mieÄ‡ przypisany atrybut NOT NULL (no i typ oczywiÅ›cie), dziaÅ‚a bez unique idk why
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
-xxy			|| Nazwa Ograniczenia			(Wymyœlamy)
+xxy			|| Nazwa Ograniczenia			(WymyÅ›lamy)
 yyy			|| Nazwa kolumny z Tabeli xxx	(Bierzemy z bazy)
 */
 
 -- ################################################################################################################################################################################
 
-																			/* Odebranie kolumnie cechy klucza g³ównego: *\
+																			/* Odebranie kolumnie cechy klucza gÅ‚Ã³wnego: *\
 -- ALTER TABLE xxx DROP CONSTRAINT xxy;
-																!!! Wa¿ne - Kolumna której chcemy nadaæ cechy klucza g³ównego musi mieæ przypisany atrybut NOT NULL (no i typ oczywiœcie), dzia³a bez unique idk why
+																!!! WaÅ¼ne - Kolumna ktÃ³rej chcemy nadaÄ‡ cechy klucza gÅ‚Ã³wnego musi mieÄ‡ przypisany atrybut NOT NULL (no i typ oczywiÅ›cie), dziaÅ‚a bez unique idk why
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
-xxy			|| Nazwa Ograniczenia			(Wymyœlamy)
+xxy			|| Nazwa Ograniczenia			(WymyÅ›lamy)
 */
 
 -- ################################################################################################################################################################################
 
 																			/* Sprawdzanie *\
 --ALTER TABLE xxx ADD CONSTRAINT xxy CHECK (yyy > 2012);
-																!!! Wa¿ne - CHECK nie tyle sprawdza warunek ale nak³ada ograniczenie dziêki któremu do kolumny mo¿emy wprowadziæ wartoœci TYLKO z okreœlonego przedzia³u
+																!!! WaÅ¼ne - CHECK nie tyle sprawdza warunek ale nakÅ‚ada ograniczenie dziÄ™ki ktÃ³remu do kolumny moÅ¼emy wprowadziÄ‡ wartoÅ›ci TYLKO z okreÅ›lonego przedziaÅ‚u
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
-xxy			|| Nazwa Ograniczenia			(Wymyœlamy)
+xxy			|| Nazwa Ograniczenia			(WymyÅ›lamy)
 yyy			|| Nazwa kolumny z Tabeli xxx	(Bierzemy z bazy)
 >			|| Potrzebny nam operator
-2012		|| Dowolny warunek
+2012			|| Dowolny warunek
 */
 
 -- ################################################################################################################################################################################
 
-																			/* Nadawanie Wartoœci Domyœlnej *\
+																			/* Nadawanie WartoÅ›ci DomyÅ›lnej *\
 --ALTER TABLE xxx ADD CONSTRAINT xxy DEFAULT ccc FOR yyy;
 
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
-xxy			|| Nazwa Ograniczenia			(Wymyœlamy)
-ccc			|| Wartoœæ domyœlna				(W zale¿noœci od typu kolumny mo¿e byæ to tekst/liczba/data/...)
+xxy			|| Nazwa Ograniczenia			(WymyÅ›lamy)
+ccc			|| WartoÅ›Ä‡ domyÅ›lna				(W zaleÅ¼noÅ›ci od typu kolumny moÅ¼e byÄ‡ to tekst/liczba/data/...)
 yyy			|| Nazwa kolumny z Tabeli xxx	(Bierzemy z bazy)
 */
 
 -- ################################################################################################################################################################################
 
-																			/* Nadawanie kolumnie wartoœci UNIQUE *\
+																			/* Nadawanie kolumnie wartoÅ›ci UNIQUE *\
 --ALTER TABLE xxx ADD CONSTRAINT xxy UNIQUE (yyy);
 
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
-xxy			|| Nazwa Ograniczenia			(Wymyœlamy)
+xxy			|| Nazwa Ograniczenia			(WymyÅ›lamy)
 yyy			|| Nazwa kolumny z Tabeli xxx	(Bierzemy z bazy)
 */
 
 -- ################################################################################################################################################################################
 
-																			/* Nadawanie kolumnie wartoœci NOT NULL *\
+																			/* Nadawanie kolumnie wartoÅ›ci NOT NULL *\
 --ALTER TABLE xxx ALTER COLUMN yyy NOT NULL;
 
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
@@ -204,13 +204,13 @@ yyy			|| Nazwa kolumny z Tabeli xxx	(Bierzemy z bazy)
 
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
 yyy			|| Nazwa kolumny z Tabeli xxx	(Bierzemy z bazy)
-...			|| Oznacza mo¿liwoœæ powielania wczeœniejszych schematów
-zzz			|| Jakakolwiek wartoœæ zgodna z typem
+...			|| Oznacza moÅ¼liwoÅ›Ä‡ powielania wczeÅ›niejszych schematÃ³w
+zzz			|| Jakakolwiek wartoÅ›Ä‡ zgodna z typem
 */
 
 -- ################################################################################################################################################################################
 
-																			/* Wyœwietlanie Tabeli *\
+																			/* WyÅ›wietlanie Tabeli *\
 --select * from xxx;
 
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
@@ -218,7 +218,7 @@ xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
 
 -- ################################################################################################################################################################################
 
-																			/* Wyœwietlanie konkretnych kolumn *\
+																			/* WyÅ›wietlanie konkretnych kolumn *\
 --select yyy,yyy,... from xxx;
 
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
@@ -232,8 +232,8 @@ yyy			|| Nazwa kolumny				(Bierzemy z bazy)
 
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
 yyy			|| Nazwa kolumny z Tabeli xxx	(Bierzemy z bazy)
-zzz			|| Jakakolwiek wartoœæ zgodna z typem
-id=1		|| Wskazujemy konkretn¹ kolumnê lub wiele (w to pole nale¿y podaæ jak¹œ unikatow¹ wartoœæ po której program bêdzie w stanie okreœliæ dok³adnie t¹ komórkê lub podajemy wartoœæ wspóln¹ dla wielu kolumn)
+zzz			|| Jakakolwiek wartoÅ›Ä‡ zgodna z typem
+id=1			|| Wskazujemy konkretnÄ… kolumnÄ™ lub wiele (w to pole naleÅ¼y podaÄ‡ jakÄ…Å› unikatowÄ… wartoÅ›Ä‡ po ktÃ³rej program bÄ™dzie w stanie okreÅ›liÄ‡ dokÅ‚adnie tÄ… komÃ³rkÄ™ lub podajemy wartoÅ›Ä‡ wspÃ³lnÄ… dla wielu kolumn)
 */
 
 -- ################################################################################################################################################################################
@@ -243,16 +243,16 @@ id=1		|| Wskazujemy konkretn¹ kolumnê lub wiele (w to pole nale¿y podaæ jak¹œ un
 --delete from xxx; (Usuwa wszystkie dane z tabeli)
 
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
-id=1		|| Wskazujemy konkretn¹ kolumnê lub wiele (w to pole nale¿y podaæ jak¹œ unikatow¹ wartoœæ po której program bêdzie w stanie okreœliæ dok³adnie t¹ komórkê lub podajemy wartoœæ wspóln¹ dla wielu kolumn)
+id=1			|| Wskazujemy konkretnÄ… kolumnÄ™ lub wiele (w to pole naleÅ¼y podaÄ‡ jakÄ…Å› unikatowÄ… wartoÅ›Ä‡ po ktÃ³rej program bÄ™dzie w stanie okreÅ›liÄ‡ dokÅ‚adnie tÄ… komÃ³rkÄ™ lub podajemy wartoÅ›Ä‡ wspÃ³lnÄ… dla wielu kolumn)
 */
 
 -- ################################################################################################################################################################################
 
 																			/* Zmiana nazwy tabeli *\
 --exec sp_rename 'xxx', 'mmm'
-																!!! Wa¿ne, Po zmianie nazwy tabeli nale¿y sprawdziæ czy operacja ta nie zepsu³a po³¹czeñ miêdzy tabelami
+																!!! WaÅ¼ne, Po zmianie nazwy tabeli naleÅ¼y sprawdziÄ‡ czy operacja ta nie zepsuÅ‚a poÅ‚Ä…czeÅ„ miÄ™dzy tabelami
 xxx			|| Nazwa tabeli					(Bierzemy z bazy)
-mmm			|| Nowa nazwa tabeli			(Wymyœlamy)
+mmm			|| Nowa nazwa tabeli			(WymyÅ›lamy)
 
 -- ################################################################################################################################################################################
 
@@ -261,6 +261,6 @@ mmm			|| Nowa nazwa tabeli			(Wymyœlamy)
 
 xxx			|| Nazwa tabeli					(Bierzemy z bazy)
 yyy			|| Nazwa kolumny z Tabeli xxx	(Bierzemy z bazy)
-mmm			|| Nowa nazwa kolumny			(Wymyœlamy)
-'COLUMN'	|| Deklarujemy typ tego co bêdziemy zmieniaæ w naszym przypadku jest to kolumna czyli 'COLUMN'
+mmm			|| Nowa nazwa kolumny			(WymyÅ›lamy)
+'COLUMN'		|| Deklarujemy typ tego co bÄ™dziemy zmieniaÄ‡ w naszym przypadku jest to kolumna czyli 'COLUMN'
 */
