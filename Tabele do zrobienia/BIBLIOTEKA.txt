@@ -1,0 +1,99 @@
+/*create database Biblioteka
+
+go
+
+use Biblioteka
+
+create table wypozyczenia
+(
+	numer_wypozyczenia		int identity(1,1) primary key,
+	numer_klasy				int,
+	Numer_ksiazki			int,
+	data_wypozyczenia		date,
+	data_oddania			date default getdate()
+);
+
+create table gatunki
+(
+	numer_gatunku			int identity(1,1) primary key,
+	Nazwa					varchar(25)
+);
+
+create table klienci
+(
+	numer_klienta			int identity(1,1) primary key,
+	imie					varchar(25),
+	nazwisko				varchar(25),
+	telefon					varchar(11),
+	email					varchar(25),
+	ulica					varchar(25),
+	kod						varchar(6),
+	miasto					varchar(25)
+);
+
+create table epoki
+(
+	numer_epoki				int identity(1,1) primary key,
+	nazwa					varchar(25),
+	start_epoki				int,
+	stop_epoki				int
+);
+
+create table ksiazki
+(
+	numer_ksiazki			int identity(1,1) primary key,
+	tytul					varchar(60),
+	rok_wydania				int,
+	numer_autora			int,
+	numer_gatunku			int,
+	numer_epoki				int,
+	cena					money
+);
+
+create table autorzy
+(
+	numer_autora			int identity(1,1) primary key,
+	imie					varchar(25),
+	nazwisko				varchar(25),
+	rok_urodzenia			int,
+	rok_smierci				int
+);
+
+go
+
+alter table ksiazki
+add constraint autor_ksiazka
+foreign key (numer_autora)
+references autorzy(numer_autora);
+
+alter table ksiazki
+add constraint epoka_ksiazka
+foreign key (numer_epoki)
+references epoki(numer_epoki);
+
+alter table ksiazki
+add constraint gatunki_ksiazka
+foreign key (numer_gatunku)
+references gatunki(numer_gatunku);
+
+alter table wypozyczenia
+add constraint ksiazka_wypozyczenia
+foreign key (numer_ksiazki)
+references ksiazki(numer_ksiazki);
+
+alter table wypozyczenia
+add constraint klienci_wypozyczenia
+foreign key (numer_klasy)
+references klienci(numer_klienta);
+
+go */
+
+--insert into gatunki (Nazwa) values ('powiesc'), ('mit'), ('epopeja'), ('komedia');
+--insert into autorzy (imie, nazwisko, rok_urodzenia, rok_smierci) values ('Adam', 'Mickiewicz', 1798, 1855), ('Juliusz', 'Slowacki', 1809, 1849), ('Czeslaw','Milosz', 1911, 2004);
+--insert into epoki (nazwa, start_epoki, stop_epoki) values ('romantyzm', 1822, 1863), ('pozytywizm', 1863,1891), ('mloda polska', 1891, 1918), ('XX lecie miedzy wojenne', 1918, 1939), ('wspolczesnosc', 1945, 2021);
+
+
+--delete from epoki where numer_epoki >= 1
+select * from gatunki 
+select * from autorzy 
+select * from epoki 
