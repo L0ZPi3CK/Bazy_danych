@@ -119,7 +119,7 @@ ccc			|| Wartość domyślna				(W zależności od typu kolumny może być to te
 
 									/* Dodawanie relacji/połączeń po stworzeniu tabeli *\
 -- Alter table xxx add constraint xxy foreign key(yyy) references yyx(yxx)
-
+									!!! Ważne Pierwsza podana Tabela to ta do której wstawiamy wartości a druga z której pobieramy
 xxx			|| Nazwa Tabeli					(Bierzemy z bazy)
 xxy			|| Nazwa Ograniczenia				(Wymyślamy)
 yyy			|| Nazwa kolumny z Tabeli xxx			(Bierzemy z bazy)
