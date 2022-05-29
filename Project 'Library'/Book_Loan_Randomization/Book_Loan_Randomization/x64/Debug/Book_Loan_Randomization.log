@@ -1,0 +1,3 @@
+﻿  Book_Loan_Randomization.cpp
+D:\Bazy_danych\Project 'Library'\Book_Loan_Randomization\Book_Loan_Randomization\Book_Loan_Randomization.cpp(8,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Book_Loan_Randomization.vcxproj -> D:\Bazy_danych\Project 'Library'\Book_Loan_Randomization\x64\Debug\Book_Loan_Randomization.exe
